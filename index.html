@@ -1,238 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Site Verification Tag -->
-    <meta name="google-site-verification" content="4in0VFpldNCYghyMe6WfkHUkzszsIdYFu9qEGF5pgQY" />
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRFE09R2JH"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-BRFE09R2JH');
-    </script>
-
-    <title>Retail Store POS by Nexill</title>
-
-    <style>
-        /* Modern, Clean Business Theme */
-        :root {
-            --primary-color: #0b5ed7;
-            --button-color: #198754;
-            --button-hover: #157347;
-            --text-dark: #212529;
-            --text-light: #f8f9fa;
-            --bg-color: #f4f6f9;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-dark);
-        }
-
-        /* Hero Header Section */
-        header {
-            background-color: #ffffff;
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 1px solid #e0e0e0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-
-        header p.subtitle {
-            font-size: 1.25rem;
-            color: #6c757d;
-            max-width: 800px;
-            margin: 0 auto 30px auto;
-        }
-
-        /* The Big Download Button */
-        .download-btn {
-            display: inline-block;
-            background-color: var(--button-color);
-            color: white;
-            padding: 15px 40px;
-            font-size: 1.25rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(25, 135, 84, 0.3);
-            transition: background-color 0.3s ease;
-        }
-
-        .download-btn:hover {
-            background-color: var(--button-hover);
-            color: white;
-        }
-
-        .badges {
-            margin-top: 20px;
-        }
-
-        .badges img {
-            margin: 0 5px;
-            height: 28px;
-        }
-
-        /* Main Content Body */
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid #e9ecef;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            padding: 10px 0;
-            position: relative;
-            padding-left: 30px;
-        }
-
-        ul li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--button-color);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        /* Formatting for specific sections */
-        .install-steps {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 5px solid var(--primary-color);
-        }
-
-        .install-steps li::before {
-            content: "";
-            /* Removes the checkmark purely for numbered steps */
-        }
-
-        .install-steps ol {
-            padding-left: 20px;
-        }
-
-        .install-steps li {
-            padding-left: 0;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-            background-color: #212529;
-            color: var(--text-light);
-        }
-
-        footer a {
-            color: #6ea8fe;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexill POS is an offline-first retail checkout and store-management application for small stores, built for faster checkout and stronger daily store control.">
+  <title>Nexill POS | Faster Checkout and Daily Store Control</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/main.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- HERO HEADER SECTION -->
-    <header>
-        <h1>🛒 Retail Store POS by Nexill</h1>
-        <p class="subtitle">A private, commercial Windows desktop application built for professional retail checkout
-            operations.</p>
-
-        <!-- THE DOWNLOAD BUTTON WITH PERMANENT DIRECT LINK -->
-        <a href="https://github.com/Nexill/Retail-Store-POS/releases/download/v1.0.0/Retail_Store_POS_Setup.exe"
-            class="download-btn">📥 Download Latest Installer (v1.0.0)</a>
-
-        <div class="badges">
-            <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-blue?style=for-the-badge" alt="Windows 10/11">
-            <img src="https://img.shields.io/badge/Mode-Offline--First-orange?style=for-the-badge" alt="Offline-First">
-        </div>
-    </header>
-
-    <!-- MAIN CONTENT -->
-    <div class="container">
-
-        <p><strong>Retail Store POS</strong> was designed for one primary reason: your store should keep selling even
-            when internet service is unstable. The application runs entirely locally, ensuring that cashiers can
-            continue processing sales, calculating tax, and printing receipts without ever relying on cloud uptime.</p>
-
-        <h2>✅ What You Get</h2>
-        <ul>
-            <li><strong>Fast checkout flow</strong> optimized for day-to-day cashier use.</li>
-            <li><strong>Fully offline operation</strong> secured entirely on your local register.</li>
-            <li><strong>Simple tax setup</strong>, including customizable tax-exempt item support.</li>
-            <li><strong>PDF receipt generation</strong> directly integrated with native Windows print support.</li>
-            <li><strong>Manager-only controls</strong> to lock down sensitive store configuration settings.</li>
+  <header id="topbar">
+    <div class="topbar__content">
+      <div class="topbar__left">
+        <a class="brand" href="index.html" aria-label="Nexill POS home">
+          <img class="brand-mark" src="logo.png" alt="Nexill logo">
+          <span class="brand-text">
+            <span class="brand-name">Nexill POS</span>
+            <span class="brand-sub">Retail checkout software</span>
+          </span>
+        </a>
+      </div>
+      <nav class="topbar__right" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="tb-link active" href="#overview">Overview</a></li>
+          <li><a class="tb-link" href="#workflow">Workflow</a></li>
+          <li><a class="tb-link" href="#platform">Capabilities</a></li>
+          <li><a class="tb-link" href="#deployment">Store Fit</a></li>
+          <li><a class="btn btn--primary topbar__cta" href="https://github.com/Nexill/Retail-Store-POS/releases/download/v1.2.0/RetailStorePos_Setup.exe" target="_blank" rel="noreferrer">Download for Windows</a></li>
         </ul>
-
-        <h2>💻 System Requirements</h2>
-        <ul>
-            <li><strong>OS:</strong> Windows 10 or Windows 11 (64-bit)</li>
-            <li><strong>Hardware:</strong> Standard PC, laptop, or Windows-based POS terminal</li>
-            <li><strong>Optional:</strong> Physical receipt printer</li>
-        </ul>
-
-        <h2>📥 How to Install</h2>
-        <div class="install-steps">
-            <ol>
-                <li>Click the large green download button at the top of this page.</li>
-                <li>Download the <code>RetailStorePos_Setup.exe</code> file.</li>
-                <li>Run the installer and follow the setup wizard.</li>
-                <li>Launch <strong>Retail Store POS</strong> from your Start Menu or Desktop.</li>
-            </ol>
-        </div>
-
-        <h2>📞 Contact Nexill</h2>
-        <p>For deployment questions, commercial licensing, or technical support inquiries, please contact our team
-            at:<br>
-            <strong><a href="mailto:maghrbi006@gmail.com"
-                    style="color: var(--primary-color);">maghrbi006@gmail.com</a></strong>
-        </p>
-
+      </nav>
     </div>
+  </header>
 
-    <!-- FOOTER SECTION -->
-    <footer>
-        <p><em>Retail Store POS is proprietary commercial software developed by Nexill.</em></p>
-        <p>&copy; 2026 Nexill. All Rights Reserved.</p>
-    </footer>
+  <main id="main">
+    <section class="section landing-hero" id="overview">
+      <div class="wrap">
+        <div class="impact-hero__copy" data-reveal>
+          <p class="section-kicker">Offline-first retail workspace</p>
+          <h1 class="impact-hero__title">Run your store with more speed and control.</h1>
+          <p class="impact-hero__lead">Nexill POS is built for small store teams that need faster checkout, clearer product handling, and stronger daily operations from one practical offline system.</p>
+          <div class="hero-cta hero-cta--center">
+            <a class="btn btn--primary" href="https://github.com/Nexill/Retail-Store-POS/releases/download/v1.2.0/RetailStorePos_Setup.exe" target="_blank" rel="noreferrer">Download now</a>
+            <a class="btn" href="#workflow">See the workflow</a>
+          </div>
+          <p class="hero-cta-note">Windows installer for store counters. Need help with setup or rollout? <a class="link-inline" href="contact.html">Contact support</a>.</p>
+          <div class="hero-microproof" aria-label="Primary trust signals">
+            <span class="hero-microproof__item">Offline-first operation</span>
+            <span class="hero-microproof__item">Windows-ready workflow</span>
+            <span class="hero-microproof__item">Cashier-first interface</span>
+            <span class="hero-microproof__item">Practical daily control</span>
+          </div>
+        </div>
 
+        <div class="hero-dock" data-reveal>
+          <div class="hero-dock__header">
+            <div>
+              <p class="card-label">See the workflow</p>
+              <h2 class="hero-dock__title">A quick look at the retail workflow</h2>
+              <p class="hero-dock__copy">From product search and sale review to receipts and daily follow-up, Nexill is built to keep the counter clear and the store organized.</p>
+            </div>
+            <div class="hero-dock__badges" aria-label="Product proof signals">
+              <span class="chip">Checkout preview</span>
+              <span class="chip">Windows installer</span>
+            </div>
+          </div>
+
+          <div class="hero-dock__grid">
+            <div class="media-placeholder media-placeholder--hero-video">
+              <img class="media-placeholder__image" src="screenshots/checkout.png" alt="Checkout flow preview showing product search, sale review, tender recording, and receipt completion" loading="eager" decoding="async">
+            </div>
+
+            <div class="hero-dock__aside">
+              <article class="hero-side-card">
+                <p class="card-label">Why this matters</p>
+                <h3>Less pressure at the counter</h3>
+                <p>Trust grows faster when buyers can see how checkout, products, and daily store control work together in one clear workspace.</p>
+                <ul class="support-links support-links--compact">
+                  <li>Show a faster selling flow</li>
+                  <li>Show clearer cashier decisions</li>
+                  <li>Show a more organized store routine</li>
+                </ul>
+              </article>
+
+              <div class="media-placeholder media-placeholder--angled-shot">
+                <img class="media-placeholder__image" src="screenshots/login.png" alt="Cashier workspace preview showing sign-in and cashier access" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NEW: Metric Impact & Visibility Ribbon -->
+    <section class="section section--tight metric-impact-ribbon" aria-labelledby="metrics-title">
+      <div class="wrap">
+        <div class="metric-impact__header" data-reveal>
+          <h2 id="metrics-title">Built for the counter.</h2>
+          <p class="subhead">A practical retail application designed for speed, stability, and daily store control.</p>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric-card" data-reveal>
+            <h3 class="metric-title">Fast local checkout</h3>
+            <p class="metric-copy">As a Windows application, Nexill keeps the counter responsive for product search, sale review, tender recording, and receipt handling.</p>
+          </div>
+
+          <div class="metric-card" data-reveal>
+            <h3 class="metric-title">Store control in one place</h3>
+            <p class="metric-copy">Keep products, users, reports, and settings together in one offline workspace built for day-to-day retail use.</p>
+          </div>
+
+          <div class="metric-card" data-reveal>
+            <h3 class="metric-title">Useful daily reports</h3>
+            <p class="metric-copy">Review sales activity, receipts, staff access, and store information from the same workspace used to run the day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight workflow-story" id="workflow">
+      <div class="wrap">
+        <div class="section-head section-head--center" data-reveal>
+          <p class="section-kicker">How the store day flows</p>
+          <h2 class="section-title">From opening to close, keep the day more organized</h2>
+          <p class="section-copy">Nexill is built for the real rhythm of small retail: starting the day, selling steadily, handling routine issues, and closing with clearer records.</p>
+        </div>
+
+        <div class="journey-layout">
+          <aside class="journey-sticky" data-reveal>
+            <p class="card-label">Workflow preview</p>
+            <h3>See the workflow from start to finish</h3>
+            <p>Use one guided walkthrough to show how the product supports the store day as it moves from opening, to active selling, to closeout.</p>
+            <div class="media-placeholder media-placeholder--storyboard">
+              <img class="media-placeholder__image" src="screenshots/recipt.png" alt="Store-day workflow preview showing sale completion and receipt state" loading="lazy" decoding="async">
+            </div>
+          </aside>
+
+          <div class="journey-track" data-journey-track>
+            <div class="journey-line" aria-hidden="true">
+              <span class="journey-line__fill"></span>
+            </div>
+
+            <article class="journey-step" data-reveal>
+              <span class="journey-step__eyebrow">Phase 01</span>
+              <h3>Start the day with a clear setup</h3>
+              <p>Open the store with products, users, and settings already in one place, so staff can begin the shift with less guesswork.</p>
+              <ul class="journey-step__list">
+                <li>Clear staff access at sign-in</li>
+                <li>Store settings ready for daily use</li>
+              </ul>
+            </article>
+
+            <article class="journey-step" data-reveal>
+              <span class="journey-step__eyebrow">Phase 02</span>
+              <h3>Keep checkout moving</h3>
+              <p>Use a selling flow that is easy to read, easy to repeat, and built for the real pace of the counter.</p>
+              <ul class="journey-step__list">
+                <li>Faster product lookup and sale review</li>
+                <li>Clearer cashier actions during a sale</li>
+              </ul>
+            </article>
+
+            <article class="journey-step" data-reveal>
+              <span class="journey-step__eyebrow">Phase 03</span>
+              <h3>Handle routine issues with less friction</h3>
+              <p>Returns, tender changes, and day-to-day interruptions are easier to manage when the workspace stays clear and organized.</p>
+              <ul class="journey-step__list">
+                <li>More controlled cashier decisions</li>
+                <li>Less confusion during exceptions</li>
+              </ul>
+            </article>
+
+            <article class="journey-step" data-reveal>
+              <span class="journey-step__eyebrow">Phase 04</span>
+              <h3>Close with cleaner records</h3>
+              <p>Finish the day with receipts, sales history, and core reports that are easier to review and easier to explain.</p>
+              <ul class="journey-step__list">
+                <li>Stronger daily close routines</li>
+                <li>Better visibility after the last sale</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight capability-section" id="platform">
+      <div class="wrap">
+        <div class="section-head section-head--center" data-reveal>
+          <p class="section-kicker">Capabilities</p>
+          <h2 class="section-title">What stores can do with Nexill POS</h2>
+          <p class="section-copy">Nexill brings the daily retail essentials into one practical system: checkout, products, users, reports, and store settings.</p>
+        </div>
+
+        <div class="feature-bento">
+          <article class="feature-bento__hero" data-reveal>
+            <p class="card-label">Store overview</p>
+            <h3>Keep daily activity easier to review</h3>
+            <p>From front-counter selling to after-sale follow-up, Nexill helps keep the store clearer and easier to manage.</p>
+            <div class="media-placeholder media-placeholder--dashboard">
+              <img class="media-placeholder__image" src="screenshots/reports.png" alt="Dashboard and store activity preview showing sales totals and transaction history" loading="lazy" decoding="async">
+            </div>
+          </article>
+
+          <article class="feature-tile feature-tile--speed" data-reveal>
+            <p class="card-label">Checkout speed</p>
+            <h3>Keep routine sales moving</h3>
+            <p>The checkout flow is designed to reduce hesitation and help staff stay focused on the current customer.</p>
+          </article>
+
+          <article class="feature-tile feature-tile--inventory" data-reveal>
+            <p class="card-label">Inventory clarity</p>
+            <h3>See products and stock more clearly</h3>
+            <p>Review product details and stock-related information in a system built for day-to-day store work.</p>
+          </article>
+
+          <article class="feature-tile feature-tile--hardware" data-reveal>
+            <p class="card-label">Hardware fit</p>
+            <h3>Built for Windows store counters</h3>
+            <p>Nexill fits fixed-workstation retail environments where a dependable PC-based workflow still runs the store.</p>
+          </article>
+
+          <article class="feature-tile feature-tile--reliability" data-reveal>
+            <p class="card-label">Reliability</p>
+            <h3>Offline-first where it matters most</h3>
+            <p>Keep selling and managing the store from one local workspace designed for day-to-day continuity.</p>
+          </article>
+
+          <article class="feature-tile feature-tile--support" data-reveal>
+            <p class="card-label">Onboarding</p>
+              <h3>Simple to install, with help available</h3>
+              <p>Download the installer directly, and reach out when you need help with setup, rollout, or store fit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight fit-section" id="deployment">
+      <div class="wrap">
+        <div class="fit-panel" data-reveal>
+          <div class="fit-panel__copy">
+            <p class="section-kicker">Store fit</p>
+            <h2 class="section-title">Built for small stores that run from a PC-based counter</h2>
+            <p class="section-copy">Nexill fits stores that want faster checkout, clearer store control, and a practical offline workflow for daily retail operations, including stores that already use a separate payment terminal.</p>
+
+            <div class="fit-cases">
+              <article class="fit-case">
+                <h3>New store setup</h3>
+                <p>Start with a clearer selling flow from day one and make training easier for front-counter staff.</p>
+              </article>
+              <article class="fit-case">
+                <h3>Replacing an older checkout routine</h3>
+                <p>Move away from slower or more confusing counter routines without creating a bigger rollout burden.</p>
+              </article>
+              <article class="fit-case">
+                <h3>Shared counter teams</h3>
+                <p>Give teams a more repeatable way to sell when more than one person works from the same counter.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="fit-panel__visual">
+            <div class="media-placeholder media-placeholder--roadmap">
+              <img class="media-placeholder__image" src="screenshots/settings.png" alt="Setup and rollout preview showing store settings and cashier preferences" loading="lazy" decoding="async">
+            </div>
+
+            <div class="fit-specs">
+              <div class="fit-spec">
+                <strong>Environment</strong>
+                <span>Windows-based store counters</span>
+              </div>
+              <div class="fit-spec">
+                <strong>Core posture</strong>
+                <span>Offline-first daily operation</span>
+              </div>
+              <div class="fit-spec">
+                <strong>Download path</strong>
+                <span>Direct Windows installer with setup help available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight support-section" id="support">
+      <div class="wrap">
+        <div class="support-lane" data-reveal>
+          <div class="support-lane__copy">
+            <p class="section-kicker">Support</p>
+            <h2 class="section-title">Support should make the next step feel easier</h2>
+            <p class="section-copy">Talk to Nexill about store fit, rollout planning, or day-to-day questions before and after install.</p>
+          </div>
+
+          <div class="support-route-grid">
+            <article class="support-route-card">
+              <p class="card-label">Route 01</p>
+              <h3>Ask about store fit</h3>
+              <p>Talk through your workflow, hardware, and daily store routine to see whether Nexill is the right match.</p>
+            </article>
+            <article class="support-route-card">
+              <p class="card-label">Route 02</p>
+              <h3>Plan setup and rollout</h3>
+              <p>Get help with installation, training, and the practical steps of putting the system into daily use.</p>
+            </article>
+            <article class="support-route-card">
+              <p class="card-label">Route 03</p>
+              <h3>Get product help</h3>
+              <p>Reach out with questions tied to real checkout, product, reporting, and store-operation workflows.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="closing-dock" data-reveal>
+          <div class="closing-dock__copy">
+            <p class="card-label">Ready to get started?</p>
+            <h2>Ready to try Nexill POS in your store?</h2>
+            <p>Download the Windows installer and see how Nexill fits your daily workflow. Setup help is available when you need it.</p>
+          </div>
+          <div class="closing-dock__actions">
+            <a class="btn btn--primary" href="https://github.com/Nexill/Retail-Store-POS/releases/download/v1.2.0/RetailStorePos_Setup.exe" target="_blank" rel="noreferrer">Download for Windows</a>
+            <a class="btn" href="contact.html">Talk to support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-left">
+        <div class="footer-title">Nexill POS</div>
+        <div class="footer-desc">Retail checkout and store-management software built for faster checkout, clearer product control, and stronger daily store operations.</div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a class="tb-link" href="#overview">Overview</a>
+        <a class="tb-link" href="#workflow">Workflow</a>
+        <a class="tb-link" href="#platform">Capabilities</a>
+        <a class="tb-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const revealItems = document.querySelectorAll('[data-reveal]');
+    const sectionLinks = document.querySelectorAll('.nav-list a[href^="#"]');
+    const trackedSections = document.querySelectorAll('main section[id]');
+    const journeyTrack = document.querySelector('[data-journey-track]');
+    const journeyFill = document.querySelector('.journey-line__fill');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        const activeId = '#' + entry.target.id;
+        sectionLinks.forEach((link) => {
+          link.classList.toggle('active', link.getAttribute('href') === activeId);
+        });
+      });
+    }, {
+      rootMargin: '-35% 0px -50% 0px',
+      threshold: 0.01,
+    });
+
+    trackedSections.forEach((section) => navObserver.observe(section));
+
+    function updateJourneyProgress() {
+      if (!journeyTrack || !journeyFill) {
+        return;
+      }
+
+      const rect = journeyTrack.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const total = rect.height + viewportHeight * 0.45;
+      const travelled = Math.min(Math.max(viewportHeight * 0.72 - rect.top, 0), total);
+      const progress = total > 0 ? travelled / total : 0;
+      journeyFill.style.transform = 'scaleY(' + progress.toFixed(3) + ')';
+    }
+
+    updateJourneyProgress();
+    window.addEventListener('scroll', updateJourneyProgress, { passive: true });
+    window.addEventListener('resize', updateJourneyProgress);
+  </script>
 </body>
-
 </html>

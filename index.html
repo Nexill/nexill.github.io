@@ -393,22 +393,48 @@
 
     trackedSections.forEach((section) => navObserver.observe(section));
 
+    let ticking = false;
+    let journeyTrackHeight = 0;
+    let viewportHeight = 0;
+
+    function updateLayoutMetrics() {
+      if (journeyTrack) {
+        journeyTrackHeight = journeyTrack.offsetHeight;
+      }
+      viewportHeight = window.innerHeight;
+    }
+
     function updateJourneyProgress() {
       if (!journeyTrack || !journeyFill) {
         return;
       }
 
       const rect = journeyTrack.getBoundingClientRect();
-      const viewportHeight = window.innerHeight;
-      const total = rect.height + viewportHeight * 0.45;
+      const total = journeyTrackHeight + viewportHeight * 0.45;
       const travelled = Math.min(Math.max(viewportHeight * 0.72 - rect.top, 0), total);
       const progress = total > 0 ? travelled / total : 0;
       journeyFill.style.transform = 'scaleY(' + progress.toFixed(3) + ')';
+
+      ticking = false;
     }
 
+    function onScroll() {
+      if (!ticking) {
+        requestAnimationFrame(updateJourneyProgress);
+        ticking = true;
+      }
+    }
+
+    function onResize() {
+      updateLayoutMetrics();
+      onScroll();
+    }
+
+    updateLayoutMetrics();
     updateJourneyProgress();
-    window.addEventListener('scroll', updateJourneyProgress, { passive: true });
-    window.addEventListener('resize', updateJourneyProgress);
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onResize);
   </script>
 </body>
 </html>
